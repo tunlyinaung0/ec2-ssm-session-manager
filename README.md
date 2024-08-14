@@ -1,1 +1,1 @@
-# ec2-ssm-session-manager
+# Logging into EC2 instance without NAT Gateway or Internet Gateway

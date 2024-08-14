@@ -20,7 +20,7 @@ resource "aws_security_group" "ssm_sg" {
         from_port = 443
         to_port = 443
         protocol = "tcp"
-        cidr_blocks = [aws_default_security_group.default.id]
+        security_groups = [aws_default_security_group.default.id]
     }
 
     egress {

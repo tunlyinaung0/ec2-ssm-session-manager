@@ -15,6 +15,10 @@ provider "aws" {
 resource "aws_vpc" "lab_vpc" {
     cidr_block = var.vpc_cidr
 
+    enable_dns_hostnames = true
+    enable_dns_support = true
+
+
     tags = {
         Name = "${var.prefix}-vpc"
     }
